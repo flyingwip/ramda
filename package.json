@@ -1,0 +1,28 @@
+{
+  "name": "ramda_fp",
+  "version": "1.0.0",
+  "description": "egghead course on ramda",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/flyingwip/ramda.git"
+  },
+  "keywords": [
+    "ramda",
+    "fp",
+    "functional",
+    "programming"
+  ],
+  "author": "martijn wip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flyingwip/ramda/issues"
+  },
+  "homepage": "https://github.com/flyingwip/ramda#readme",
+  "dependencies": {
+    "ramda": "^0.27.1"
+  }
+}
