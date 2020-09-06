@@ -11,10 +11,6 @@ fn = R.converge(console.log, [() => 1, () => 2, () => 3])
 fn()
 
 // now with a parameter as a point free (tacit programming)
-fnDeluxe = R.converge(
-  console.log,
-  [(p) => p * 2, (p) => p * 3, (p) => p * 4],
-  R.identity
-)
+fnDeluxe = R.converge(console.log, [(p) => p * 2, (p) => p * 3, (p) => p * 4])
 
 fnDeluxe(2)
