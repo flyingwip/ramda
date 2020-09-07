@@ -8,6 +8,18 @@ const R = require('../node_modules/ramda')
 // using combinators and function composition [...] instead of variables
 // https://dzone.com/articles/real-world-uses-of-tacit-programming-part-1-of-2
 
+// In this exercise we go from
+// const generateUrl = (id) => `https://img.socialnetwork.com/avatar/${id}.png`
+// getUpdatedPerson = (person) => {
+//   const url = generateUrl(person.id)
+//   return R.assoc('avatar', getUrlFromPerson(person), person)
+// }
+// to
+// const getUpdatedPerson = R.converge(R.assoc('avatar'), [
+//   getUrlFromPerson,
+//   R.identity,
+// ])
+
 // const getUrlFromPerson = R.compose(generateUrl, R.propOr('default', 'id'))
 
 // const getUpdatedPerson = (person) => {
