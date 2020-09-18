@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/flyingwip/ramda#readme",
   "dependencies": {
+    "lodash": "^4.17.20",
     "ramda": "^0.27.1"
   }
 }
